@@ -1,0 +1,49 @@
+<svg width="100%" height="100%" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #1a1a1a; }
+      .surface { fill: #2a2a2a; stroke: #444; stroke-width: 1; }
+      .accent { fill: #66ff66; opacity: 0.2; }
+      .text { fill: #888; font-family: monospace; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Mobile App Shell -->
+  <g transform="translate(50, 50)">
+    <text x="0" y="-10" class="text">App Shell (Mobile)</text>
+    <rect x="0" y="0" width="280" height="500" class="surface" rx="16" />
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="280" height="60" class="surface" rx="16" />
+    <text x="20" y="35" class="text">Header (Logo + Streak)</text>
+    
+    <!-- Main Content Area -->
+    <rect x="20" y="80" width="240" height="340" class="surface" rx="8" />
+    <text x="80" y="250" class="text">C-FEED-VIEW</text>
+    
+    <!-- Bottom Nav -->
+    <rect x="0" y="440" width="280" height="60" class="surface" rx="16" />
+    <circle cx="40" cy="470" r="12" class="surface" />
+    <circle cx="106" cy="470" r="12" class="surface" />
+    <circle cx="173" cy="470" r="12" class="surface" />
+    <circle cx="240" cy="470" r="12" class="surface" />
+  </g>
+
+  <!-- Drawer Open State -->
+  <g transform="translate(400, 50)">
+    <text x="0" y="-10" class="text">Drawer Open (Culture Breakdown)</text>
+    <rect x="0" y="0" width="280" height="500" class="surface" rx="16" />
+    
+    <!-- Main Content Area (Covered) -->
+    <rect x="20" y="80" width="240" height="340" class="surface" rx="8" />
+    
+    <!-- Overlay/Drawer -->
+    <rect x="0" y="250" width="280" height="250" class="surface" rx="16" style="fill: #333;" />
+    <rect x="120" y="260" width="40" height="4" class="surface" rx="2" />
+    <text x="20" y="290" class="text" fill="#66ff66">Culture Breakdown</text>
+    <rect x="20" y="310" width="240" height="100" class="surface" rx="4" />
+    
+    <!-- Bottom Nav (Hidden/Covered by drawer) -->
+  </g>
+
+</svg>

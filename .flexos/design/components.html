@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lingo.jpg - Components</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      padding: var(--space-8);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .comp-section { margin-bottom: var(--space-12); }
+    .comp-grid { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+    h2 { font-family: var(--font-display); margin-bottom: var(--space-4); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-2); }
+  </style>
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+    <h1 style="font-family: var(--font-display)">Components</h1>
+    <button class="btn btn-surface" onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark')">Toggle Theme</button>
+  </div>
+
+  <div class="comp-section">
+    <h2>Buttons</h2>
+    <div class="comp-grid">
+      <button class="btn btn-primary">Primary Action</button>
+      <button class="btn btn-accent">Vault Action</button>
+      <button class="btn btn-surface">Surface Button</button>
+      <button class="btn btn-ghost">Ghost Button</button>
+      <button class="btn btn-primary" disabled>Disabled</button>
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <h2>Badges & Streaks</h2>
+    <div class="comp-grid">
+      <div class="badge badge-primary">🔥 12 Days</div>
+      <div class="badge badge-accent">💎 Premium</div>
+      <div class="badge">New</div>
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <h2>Inputs</h2>
+    <div style="max-width: 300px;">
+      <input type="text" class="input" placeholder="Type your guess...">
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <h2>Meme Blanks</h2>
+    <div class="comp-grid" style="background: var(--color-surface); padding: 2rem; border-radius: var(--radius-lg);">
+      <span class="meme-blank">_______</span>
+      <span class="meme-blank revealed">no mames</span>
+      <span class="meme-blank revealed-error">i don't suck</span>
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <h2>Cards & Vault Items</h2>
+    <div class="comp-grid">
+      <div class="card" style="width: 300px;">
+        <div class="card-body">
+          <h3 class="text-display">Card Title</h3>
+          <p class="text-muted">This is a standard card body.</p>
+        </div>
+      </div>
+
+      <div class="vault-item">
+        <div class="vault-emoji">💀</div>
+        <div class="vault-price">500 Pts</div>
+      </div>
+
+      <div class="vault-item locked">
+        <div class="vault-emoji">🤡</div>
+        <div class="vault-price">1000 Pts</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
