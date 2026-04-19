@@ -1,3 +1,137 @@
+---
+id: doc-design
+title: Lingo.jpg — Design
+type: doc
+subtype: design
+status: published
+sequence: 6
+createdAt: "2026-04-19T21:04:06.519Z"
+updatedAt: "2026-04-19T21:04:06.519Z"
+---
+
+# Design
+
+Lingo.jpg does not look like a classroom. It looks like the internet. 
+
+The aesthetic is heavily inspired by late-night scrolling. Dark mode is not an option; it is the default and only mode. The background is a deep, bruised purple-black, allowing the memes (which are often bright, low-res, or colorful) to pop off the screen. 
+
+The accents are pure cyber-neon. A toxic, radioactive green serves as the primary action color—it's the color of correct answers, high scores, and active streaks. A vibrant electric purple serves as the secondary accent for The Vault and premium interactions. 
+
+Typography is split between a bold, hyper-legible sans-serif for UI elements, and a slightly chaotic, marker-style display font for streak counters and point callouts. The text needs to feel digital but slightly raw, like a Discord server run by hackers who love linguistics.
+
+Components are designed to get out of the way of the content. Cards have no borders, only subtle ambient shadows that glow in the accent colors. Buttons are chunky, pill-shaped, and feature aggressive haptic feedback. When you get a translation right, the button doesn't just change color; the phone buzzes, the points physically fly up the screen, and the UI reacts. 
+
+The Empty States are snarky. If you have no saved memes, the app tells you: "Your deck is as empty as a textbook. Go scroll." 
+
+<flex_block type="tokens">
+{
+  "category": "colors",
+  "mode": "dark",
+  "tokens": {
+    "--color-primary": "oklch(80% 0.25 145)",
+    "--color-primary-hover": "oklch(85% 0.25 145)",
+    "--color-primary-subtle": "oklch(80% 0.25 145 / 0.15)",
+    "--color-accent": "oklch(65% 0.25 300)",
+    "--color-accent-hover": "oklch(70% 0.25 300)",
+    "--color-bg": "oklch(15% 0.03 285)",
+    "--color-surface": "oklch(20% 0.04 285)",
+    "--color-surface-raised": "oklch(25% 0.05 285)",
+    "--color-border": "oklch(30% 0.05 285)",
+    "--color-text": "oklch(95% 0.01 285)",
+    "--color-text-muted": "oklch(70% 0.03 285)",
+    "--color-success": "oklch(80% 0.25 145)",
+    "--color-warning": "oklch(75% 0.20 50)",
+    "--color-error": "oklch(65% 0.25 20)"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens">
+{
+  "category": "colors",
+  "mode": "light",
+  "tokens": {
+    "--color-primary": "oklch(60% 0.20 145)",
+    "--color-primary-hover": "oklch(55% 0.20 145)",
+    "--color-primary-subtle": "oklch(60% 0.20 145 / 0.15)",
+    "--color-accent": "oklch(55% 0.25 300)",
+    "--color-accent-hover": "oklch(50% 0.25 300)",
+    "--color-bg": "oklch(98% 0.01 285)",
+    "--color-surface": "oklch(100% 0 0)",
+    "--color-surface-raised": "oklch(95% 0.02 285)",
+    "--color-border": "oklch(90% 0.03 285)",
+    "--color-text": "oklch(20% 0.04 285)",
+    "--color-text-muted": "oklch(50% 0.05 285)",
+    "--color-success": "oklch(60% 0.20 145)",
+    "--color-warning": "oklch(70% 0.20 50)",
+    "--color-error": "oklch(60% 0.25 20)"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens">
+{
+  "category": "typography",
+  "tokens": {
+    "--font-display": "'Space Grotesk', system-ui, sans-serif",
+    "--font-body": "'Inter', system-ui, sans-serif",
+    "--font-mono": "'JetBrains Mono', monospace",
+    "--font-size-xs": "0.75rem",
+    "--font-size-sm": "0.875rem",
+    "--font-size-base": "1rem",
+    "--font-size-lg": "1.125rem",
+    "--font-size-xl": "1.25rem",
+    "--font-size-2xl": "1.5rem",
+    "--font-size-3xl": "2rem",
+    "--font-size-4xl": "2.5rem",
+    "--font-weight-normal": "400",
+    "--font-weight-medium": "500",
+    "--font-weight-bold": "700",
+    "--font-weight-black": "900"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens">
+{
+  "category": "spacing",
+  "tokens": {
+    "--space-1": "0.25rem",
+    "--space-2": "0.5rem",
+    "--space-3": "0.75rem",
+    "--space-4": "1rem",
+    "--space-6": "1.5rem",
+    "--space-8": "2rem",
+    "--space-12": "3rem",
+    "--space-16": "4rem"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens">
+{
+  "category": "radii",
+  "tokens": {
+    "--radius-sm": "0.5rem",
+    "--radius-md": "1rem",
+    "--radius-lg": "1.5rem",
+    "--radius-full": "9999px"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens">
+{
+  "category": "shadows",
+  "tokens": {
+    "--shadow-glow-primary": "0 0 20px oklch(80% 0.25 145 / 0.2)",
+    "--shadow-glow-accent": "0 0 20px oklch(65% 0.25 300 / 0.2)",
+    "--shadow-card": "0 10px 30px oklch(0% 0 0 / 0.5)"
+  }
+}
+</flex_block>
+
+<flex_block type="mockup-html" id="landing-preview">
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
@@ -404,3 +538,114 @@
 </script>
 </body>
 </html>
+</flex_block>
+
+---
+
+<flex_block type="tokens" id="blk-001" name="colors">
+{
+  "category": "colors",
+  "mode": "dark",
+  "tokens": {
+    "--color-primary": "oklch(80% 0.25 145)",
+    "--color-primary-hover": "oklch(85% 0.25 145)",
+    "--color-primary-subtle": "oklch(80% 0.25 145 / 0.15)",
+    "--color-accent": "oklch(65% 0.25 300)",
+    "--color-accent-hover": "oklch(70% 0.25 300)",
+    "--color-bg": "oklch(15% 0.03 285)",
+    "--color-surface": "oklch(20% 0.04 285)",
+    "--color-surface-raised": "oklch(25% 0.05 285)",
+    "--color-border": "oklch(30% 0.05 285)",
+    "--color-text": "oklch(95% 0.01 285)",
+    "--color-text-muted": "oklch(70% 0.03 285)",
+    "--color-success": "oklch(80% 0.25 145)",
+    "--color-warning": "oklch(75% 0.20 50)",
+    "--color-error": "oklch(65% 0.25 20)"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens" id="blk-002" name="colors">
+{
+  "category": "colors",
+  "mode": "light",
+  "tokens": {
+    "--color-primary": "oklch(60% 0.20 145)",
+    "--color-primary-hover": "oklch(55% 0.20 145)",
+    "--color-primary-subtle": "oklch(60% 0.20 145 / 0.15)",
+    "--color-accent": "oklch(55% 0.25 300)",
+    "--color-accent-hover": "oklch(50% 0.25 300)",
+    "--color-bg": "oklch(98% 0.01 285)",
+    "--color-surface": "oklch(100% 0 0)",
+    "--color-surface-raised": "oklch(95% 0.02 285)",
+    "--color-border": "oklch(90% 0.03 285)",
+    "--color-text": "oklch(20% 0.04 285)",
+    "--color-text-muted": "oklch(50% 0.05 285)",
+    "--color-success": "oklch(60% 0.20 145)",
+    "--color-warning": "oklch(70% 0.20 50)",
+    "--color-error": "oklch(60% 0.25 20)"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens" id="blk-003" name="typography">
+{
+  "category": "typography",
+  "tokens": {
+    "--font-display": "'Space Grotesk', system-ui, sans-serif",
+    "--font-body": "'Inter', system-ui, sans-serif",
+    "--font-mono": "'JetBrains Mono', monospace",
+    "--font-size-xs": "0.75rem",
+    "--font-size-sm": "0.875rem",
+    "--font-size-base": "1rem",
+    "--font-size-lg": "1.125rem",
+    "--font-size-xl": "1.25rem",
+    "--font-size-2xl": "1.5rem",
+    "--font-size-3xl": "2rem",
+    "--font-size-4xl": "2.5rem",
+    "--font-weight-normal": "400",
+    "--font-weight-medium": "500",
+    "--font-weight-bold": "700",
+    "--font-weight-black": "900"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens" id="blk-004" name="spacing">
+{
+  "category": "spacing",
+  "tokens": {
+    "--space-1": "0.25rem",
+    "--space-2": "0.5rem",
+    "--space-3": "0.75rem",
+    "--space-4": "1rem",
+    "--space-6": "1.5rem",
+    "--space-8": "2rem",
+    "--space-12": "3rem",
+    "--space-16": "4rem"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens" id="blk-005" name="radii">
+{
+  "category": "radii",
+  "tokens": {
+    "--radius-sm": "0.5rem",
+    "--radius-md": "1rem",
+    "--radius-lg": "1.5rem",
+    "--radius-full": "9999px"
+  }
+}
+</flex_block>
+
+<flex_block type="tokens" id="blk-006" name="shadows">
+{
+  "category": "shadows",
+  "tokens": {
+    "--shadow-glow-primary": "0 0 20px oklch(80% 0.25 145 / 0.2)",
+    "--shadow-glow-accent": "0 0 20px oklch(65% 0.25 300 / 0.2)",
+    "--shadow-card": "0 10px 30px oklch(0% 0 0 / 0.5)"
+  }
+}
+</flex_block>

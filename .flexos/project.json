@@ -1,9 +1,23 @@
 {
-  "name": "{{project_name}}",
-  "slug": "{{project_slug}}",
-  "color": "{{theme_color}}",
-  "ownerId": null,
-  "ownerEmail": null,
-  "createdAt": "{{created_at}}",
-  "version": "0.1.0"
+  "name": "Lingo.jpg",
+  "slug": "lingo-jpg",
+  "tagline": "Learn the language they actually speak.",
+  "description": "Traditional apps teach you 'The library is straight ahead.' Lingo.jpg teaches you 'This ain't it, chief.' Master real-world slang, idioms, and internet culture by translating memes.",
+  "seedId": "g0ZxuAFLB7WiMTojMvDn",
+  "brand": {
+    "color": "#7c3aed",
+    "personality": [
+      "chaotic-good",
+      "internet-native",
+      "irreverent",
+      "obsessive"
+    ],
+    "values": [
+      "cultural context over grammatical perfection",
+      "slang is valid vocabulary",
+      "learning should feel like scrolling"
+    ]
+  },
+  "createdAt": "2026-04-19T21:04:06.519Z",
+  "version": "2.0"
 }
